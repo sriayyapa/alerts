@@ -23,9 +23,9 @@ jobs:
       - name: Run BSE alert
         run: java -jar bse-alert.jar
         env:
-            BSE_FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
-            BSE_GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-            BSE_TO_EMAIL: ${{ secrets.TO_EMAIL }}
+            BSE_FROM_EMAIL: ${{ secrets.BSE_FROM_EMAIL }}
+            BSE_GMAIL_APP_PASSWORD: ${{ secrets.BSE_GMAIL_APP_PASSWORD }}
+            BSE_TO_EMAIL: ${{ secrets.BSE_TO_EMAIL }}
 
 
       - name: Save sent-alert history
